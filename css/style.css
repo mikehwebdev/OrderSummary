@@ -10,13 +10,20 @@
 }
 
 body {
-    max-width: 1440px;
+    width: auto;
+    margin: 0 auto;
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
 }
 
 .container {
-    width: 375px;
-    margin: 0 auto;
+    min-width: 375px;
+    max-width: 375px;
+    height: 100%;
+    margin: 0 auto 0 auto;
     background-color: hsl(225, 100%, 94%);
     display: flex;
     flex-direction: column;
@@ -105,6 +112,7 @@ h2 {
 .proceed-button:hover {
     background-color: hsl(224, 23%, 55%);
     transition: ease-in-out 250ms;
+    cursor: pointer;
 }
 
 .cancel-button {
